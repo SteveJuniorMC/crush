@@ -39,6 +39,8 @@
     </style>
 
     <!-- Text Styles -->
+    <style name="CrushText" parent="android:Widget.TextView" />
+
     <style name="CrushText.Title">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">48sp</item>
