@@ -40,7 +40,10 @@ class AnimationManager(private val gameView: GameView) {
 
         // Candy 1 animation (currently at pos2, animating from pos1)
         val anim1X = ValueAnimator.ofFloat(dx, 0f).apply {
-            addUpdateListener { candy1.animationOffsetX = it.animatedValue as Float }
+            addUpdateListener {
+                candy1.animationOffsetX = it.animatedValue as Float
+                gameView.refresh()
+            }
         }
         val anim1Y = ValueAnimator.ofFloat(dy, 0f).apply {
             addUpdateListener { candy1.animationOffsetY = it.animatedValue as Float }
@@ -78,7 +81,6 @@ class AnimationManager(private val gameView: GameView) {
             }
         })
 
-        animatorSet.addUpdateListener { gameView.refresh() }
         animatorSet.start()
     }
 
@@ -103,7 +105,10 @@ class AnimationManager(private val gameView: GameView) {
         val shakeAmount = cellSize * 0.1f
 
         val anim1X = ValueAnimator.ofFloat(dx, 0f, -shakeAmount, shakeAmount, -shakeAmount * 0.5f, 0f).apply {
-            addUpdateListener { candy1.animationOffsetX = it.animatedValue as Float }
+            addUpdateListener {
+                candy1.animationOffsetX = it.animatedValue as Float
+                gameView.refresh()
+            }
         }
         val anim1Y = ValueAnimator.ofFloat(dy, 0f).apply {
             addUpdateListener { candy1.animationOffsetY = it.animatedValue as Float }
@@ -133,7 +138,6 @@ class AnimationManager(private val gameView: GameView) {
             }
         })
 
-        animatorSet.addUpdateListener { gameView.refresh() }
         animatorSet.start()
     }
 
@@ -149,7 +153,10 @@ class AnimationManager(private val gameView: GameView) {
         for (candy in candies) {
             // Scale up and fade out
             val scaleAnim = ValueAnimator.ofFloat(1f, 1.3f, 0f).apply {
-                addUpdateListener { candy.scale = it.animatedValue as Float }
+                addUpdateListener {
+                    candy.scale = it.animatedValue as Float
+                    gameView.refresh()
+                }
             }
             val alphaAnim = ValueAnimator.ofFloat(1f, 1f, 0f).apply {
                 addUpdateListener { candy.alpha = it.animatedValue as Float }
@@ -181,7 +188,6 @@ class AnimationManager(private val gameView: GameView) {
             }
         })
 
-        animatorSet.addUpdateListener { gameView.refresh() }
         animatorSet.start()
     }
 
@@ -199,7 +205,10 @@ class AnimationManager(private val gameView: GameView) {
             val fallAnim = ValueAnimator.ofFloat(startOffset, 0f).apply {
                 duration = FALL_DURATION_PER_CELL * distance
                 interpolator = BounceInterpolator()
-                addUpdateListener { candy.animationOffsetY = it.animatedValue as Float }
+                addUpdateListener {
+                    candy.animationOffsetY = it.animatedValue as Float
+                    gameView.refresh()
+                }
             }
             animators.add(fallAnim)
         }
@@ -252,7 +261,6 @@ class AnimationManager(private val gameView: GameView) {
             }
         })
 
-        animatorSet.addUpdateListener { gameView.refresh() }
         animatorSet.start()
     }
 
