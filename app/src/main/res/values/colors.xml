@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors -->
+    <color name="primary">#1A1A2E</color>
+    <color name="primary_dark">#0F0F23</color>
+    <color name="primary_variant">#16213E</color>
+    <color name="secondary">#FFD700</color>
+    <color name="secondary_variant">#FFC107</color>
+
+    <!-- Background Colors -->
+    <color name="background_start">#1A1A2E</color>
+    <color name="background_end">#16213E</color>
+    <color name="board_background">#0F0F23</color>
+    <color name="panel_background">#2D2D44</color>
+    <color name="panel_background_alpha">#CC2D2D44</color>
+
+    <!-- Candy Colors - Primary -->
+    <color name="candy_red">#FF4757</color>
+    <color name="candy_orange">#FFA502</color>
+    <color name="candy_yellow">#FFD32A</color>
+    <color name="candy_green">#26DE81</color>
+    <color name="candy_blue">#45AAF2</color>
+    <color name="candy_purple">#A55EEA</color>
+
+    <!-- Candy Colors - Accent/Highlight -->
+    <color name="candy_red_light">#FF6B7A</color>
+    <color name="candy_orange_light">#FFB732</color>
+    <color name="candy_yellow_light">#FFE066</color>
+    <color name="candy_green_light">#7BED9F</color>
+    <color name="candy_blue_light">#70C7FF</color>
+    <color name="candy_purple_light">#C990FF</color>
+
+    <!-- Candy Colors - Shadow/Dark -->
+    <color name="candy_red_dark">#CC3945</color>
+    <color name="candy_orange_dark">#CC8402</color>
+    <color name="candy_yellow_dark">#CCA922</color>
+    <color name="candy_green_dark">#1EB268</color>
+    <color name="candy_blue_dark">#3788C2</color>
+    <color name="candy_purple_dark">#844BBB</color>
+
+    <!-- UI Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#B8860B</color>
+    <color name="star_filled">#FFD700</color>
+    <color name="star_empty">#4A4A5A</color>
+
+    <!-- Button Colors -->
+    <color name="button_play">#26DE81</color>
+    <color name="button_play_pressed">#1EB268</color>
+    <color name="button_secondary">#45AAF2</color>
+    <color name="button_secondary_pressed">#3788C2</color>
+
+    <!-- Level Selection -->
+    <color name="level_locked">#3A3A4A</color>
+    <color name="level_unlocked">#45AAF2</color>
+    <color name="level_completed">#26DE81</color>
+
+    <!-- Effects -->
+    <color name="glow_white">#40FFFFFF</color>
+    <color name="particle_sparkle">#FFFFFF</color>
+</resources>
